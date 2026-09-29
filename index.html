@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Vídeos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>🎬 Meus Vídeos</h1>
+      <p id="contador">18 vídeos</p>
+    </div>
+    <input id="pesquisa" type="search" placeholder="🔎 Pesquisar vídeo..." autocomplete="off">
+  </header>
+
+  <main>
+    <div id="grade-videos" class="grade-videos"></div>
+    <p id="sem-resultados" class="sem-resultados" hidden>Nenhum vídeo encontrado.</p>
+  </main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-fundo" id="fechar-modal"></div>
+    <div class="modal-conteudo">
+      <button id="botao-fechar" class="botao-fechar" aria-label="Fechar">×</button>
+      <h2 id="modal-titulo"></h2>
+      <video id="modal-video" controls playsinline></video>
+    </div>
+  </div>
+
+  <script src="videos.js"></script>
+</body>
+</html>
